@@ -1,0 +1,123 @@
+{    
+    "listMakanan": [
+        {
+            "id": 1,
+            "title": "Sate Maranggi & Sop Tulang +62, Gang Pusaka",
+            "ctg": "Rice, Fast food, Sate",
+            "jarak": "0.39 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6792a984-be2d-4cdd-ad2d-f5939f058d65_IMG_20200122_144851_948.jpg?auto=format",
+            "alamat": "Kp Jati, Jl. Rengas Dengklok Raya, Gang Pusaka No. 56, Rengas Dengklok, Karawang"
+
+        },
+        {
+            "id": 2,
+            "title": "Muara Bebek, Palumbonsari",
+            "ctg": "Chicken & duck, Rice",
+            "jarak": "14.51 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7a9b5749-96ee-4fdf-9559-0b3ef84ad11b_IMG_20210409_180419_201.jpg?auto=format"
+        },
+        {
+            "id": 3,
+            "title": "Liezna Dimsum, Karawang Timur",
+            "ctg": "Snacks",
+            "jarak": "15.4 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1e32ce3c-3354-41f4-9981-288d065198e0_file20190322-5597-1uwzyvs.jpeg?auto=format"
+        },
+        {
+            "id": 4,
+            "title": "Tanoshii Sushi, Medan Satria",
+            "ctg": "Japanese, Snacks, Fast food",
+            "jarak": "15.53 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d4bd919d-a0aa-475c-b3d4-09c302259a0d_brand-image_1661994005440.jpg?auto=format"
+        },
+        {
+            "id": 1,
+            "title": "Sate Maranggi & Sop Tulang +62, Gang Pusaka",
+            "ctg": "Rice, Fast food, Sate",
+            "jarak": "0.39 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/6792a984-be2d-4cdd-ad2d-f5939f058d65_IMG_20200122_144851_948.jpg?auto=format"
+        },
+        {
+            "id": 2,
+            "title": "Muara Bebek, Palumbonsari",
+            "ctg": "Chicken & duck, Rice",
+            "jarak": "14.51 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/7a9b5749-96ee-4fdf-9559-0b3ef84ad11b_IMG_20210409_180419_201.jpg?auto=format"
+        },
+        {
+            "id": 3,
+            "title": "Liezna Dimsum, Karawang Timur",
+            "ctg": "Snacks",
+            "jarak": "15.4 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1e32ce3c-3354-41f4-9981-288d065198e0_file20190322-5597-1uwzyvs.jpeg?auto=format"
+        },
+        {
+            "id": 4,
+            "title": "Tanoshii Sushi, Medan Satria",
+            "ctg": "Japanese, Snacks, Fast food",
+            "jarak": "15.53 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d4bd919d-a0aa-475c-b3d4-09c302259a0d_brand-image_1661994005440.jpg?auto=format"
+        },
+        {
+            "id": 3,
+            "title": "Liezna Dimsum, Karawang Timur",
+            "ctg": "Snacks",
+            "jarak": "15.4 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/1e32ce3c-3354-41f4-9981-288d065198e0_file20190322-5597-1uwzyvs.jpeg?auto=format"
+        },
+        {
+            "id": 4,
+            "title": "Tanoshii Sushi, Medan Satria",
+            "ctg": "Japanese, Snacks, Fast food",
+            "jarak": "15.53 km",
+            "img": "https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/d4bd919d-a0aa-475c-b3d4-09c302259a0d_brand-image_1661994005440.jpg?auto=format"
+        }
+    ],
+    "cardDeskripsi": [
+        {
+            "id": 1,
+            "img": "https://i.gojekapi.com/darkroom/gofood-id/v2/images/uploads/7f815171-7ac9-4d6d-80c8-e39e83dca436_why-gofood-review.png?auto=format",
+            "title": "1. Ulasan yang tak terhitung jumlahnya untuk dilewati",
+            "deskripis": "Lakukan transaksi apapun di aplikasi Gojek untuk kumpulin XP (Experience Points) dan nikmatin semua keuntungan yang tersedia. Pelajari detail program di sini."
+        },
+        {
+            "id": 2,
+            "img": "https://i.gojekapi.com/darkroom/gofood-id/v2/images/uploads/80cb711b-d5c1-4c1e-a1a2-92069eb0a859_why-gofood-order.png?auto=format",
+            "title": "2. Pesan atau ambil dari resto",
+            "deskripis": "Ada banyak Reward seru menantimu di setiap level Mulai dari jadi Warga di 0 XP, terus jadi Juragan, Bos, sampe akhirnya Anak Sultan. Makin tinggi level kamu, makin gede hadiah menantimu! Pelajari detailnya di sini!."
+        },
+        {
+            "id": 3,
+            "img": "https://i.gojekapi.com/darkroom/gofood-id/v2/images/uploads/6bf66475-00fc-4a41-92f3-65fc37e5eddd_why-gofood-deals.png?auto=format",
+            "title": "3. Penawaran besar untuk semua masakan",
+            "deskripis": "Mulai dari jadi Warga di 0 XP, terus jadi Juragan, Bos, sampe akhirnya Anak Sultan. Makin tinggi level kamu, makin gede hadiah menantimu! Pelajari detailnya di sini!."
+        }
+        
+    ],
+    "pelanggan": [
+        {
+            "id": 1,
+            "title": "Bagas",
+            "message": "mango pocketnya tidak sesuai. bungkusnya bukan seharusnya, pakai kertas. isinya tidak ada ayamnya dan sayurnya sedikit.",
+            "img": "https://upload.wikimedia.org/wikipedia/id/thumb/2/21/Daniel_Radcliffe_di_film_Harry_Potter_and_The_Order_of_Phoenix.jpg/640px-Daniel_Radcliffe_di_film_Harry_Potter_and_The_Order_of_Phoenix.jpg",
+            "user": "Gojek User"
+
+        },
+        
+        {
+            "id": 2,
+            "title": "Yoga Saputra",
+            "message": "Kentang gorengnya kemahalan, rasanya juga hambar dikit juga.",
+            "img": "https://awsimages.detik.net.id/community/media/visual/2020/07/13/manga-naruto-1_43.webp?w=700&q=90",
+            "user": "Gojek User"
+        },
+        {
+            "id": 3,
+            "title": "Helpriks Joko Anwar",
+            "message": "saosnya kurang banyak, lain kali tolong tambahin saosnya LG. makasih",
+            "img": "https://assets.promediateknologi.com/crop/0x0:0x0/x/photo/2022/03/06/539978531.jpg",
+            "user": "Gojek User"
+        }
+
+    ]
+}
