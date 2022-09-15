@@ -170,7 +170,8 @@ const Beranda = () => {
         </h6>
         <p className="text-center text-sm lg:text-base">
           Kami membantu Anda. Pikirkan saja apa yang ingin Anda makan dan minum,
-          <br />dan kami akan memberikannya kepada Anda.
+          <br />
+          dan kami akan memberikannya kepada Anda.
         </p>
         <div className="flex flex-wrap items-center mt-4 w-full justify-center">
           {listMakanan.listMakanan.slice(0, 8).map((item, index) => {
@@ -183,10 +184,8 @@ const Beranda = () => {
                     alt="slider-img"
                   />
                   <h2 className="text-sm lg:text-lg font-semibold text-black">
-                    {`${item.title.slice(
-                      0,
-                      17
-                    )}...`}</h2>
+                    {`${item.title.slice(0, 17)}...`}
+                  </h2>
                   <p className="text-xs text-gray-600">{`${item.ctg.slice(
                     0,
                     17
@@ -220,7 +219,8 @@ const Beranda = () => {
                   onClick={() => setIdActive(item.id)}
                   className="cursor-pointer py-3 px-4 mx-3  my-2 lg:my-4"
                   style={{
-                    backgroundColor: item.id === idActive ? "#541690" : "#ffffff",
+                    backgroundColor:
+                      item.id === idActive ? "#541690" : "#ffffff",
                     borderRadius: 20,
                   }}
                 >
@@ -245,10 +245,7 @@ const Beranda = () => {
             })}
           </div>
           <div className="order-1 lg:order-2 flex items-center">
-            <img
-              src={findActive?.img}
-              alt="img-active"
-            />
+            <img src={findActive?.img} alt="img-active" />
           </div>
         </div>
       </div>
@@ -265,7 +262,7 @@ const Beranda = () => {
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-black">
+              <h2 class="mb-6 text-sm font-semibold uppercase text-black">
                 Resources
               </h2>
               <ul class="text-black font-normal">
@@ -305,7 +302,7 @@ const Beranda = () => {
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase text-black">
+              <h2 class="mb-6 text-sm font-semibold uppercase text-black">
                 Legal
               </h2>
               <ul class="text-black">

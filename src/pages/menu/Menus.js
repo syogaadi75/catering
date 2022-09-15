@@ -1,110 +1,72 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import listMakanan from "../../data/listMakanan.json";
-import jamBuka from "../../data/jamBuka.json";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import CircleIcon from "@mui/icons-material/Circle";
-import StarIcon from "@mui/icons-material/Star";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-import StoreIcon from "@mui/icons-material/Store";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
+import { Link } from "react-router-dom";
+import listMakanan from "../../data/listMakanan.json";
 
-const DetilMenu = () => {
-  let { id } = useParams();
-  const Detil = listMakanan.listMakanan.find((item) => {
-    return item.id === parseInt(id);
-  });
-
+const Menus = () => {
   return (
     <>
-      <div className="flex p-8 lg:p-12 flex-col lg:flex-row mt-10">
-        <div className="rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg lg:w-1/4">
-          <img
-            className="rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg h-[100%]"
-            src={Detil.img}
-            alt="img-detil"
-          />
-        </div>
-        <div className="py-4 lg:px-8">
-          <h2 className="font-semibold text-base lg:text-2xl">{Detil.title}</h2>
-          <div className="flex lg:items-center mt-5 flex-col lg:flex-row">
-            <div className="flex items-center mr-2 px-2 py-2 rounded-lg bg-[#F05400]">
-              <ThumbUpIcon className="text-white" fontSize="sm" />
-              <p className="font-semibold ml-2 text-white text-sm">
-                Sudah Bergabung Mitra Kami
-              </p>
-            </div>
-            <p className="text-sm mt-2 lg:mt-0">{Detil.ctg}</p>
-          </div>
-          <div className="flex items-center mt-3">
-            <div className="flex items-center mr-5">
-              <CircleIcon className="text-[#EA001F]" fontSize="sm" />
-              <h6 className="font-normal ml-2 text-black text-sm">Tutup</h6>
-            </div>
-            <div className="flex">
-              <p className="text-[#00880D] text-sm font-semibold">Jam Buka</p>
-            </div>
-          </div>
-          <p className="font-normal mt-2 text-xs lg:text-base text-gray-600">
-            {Detil.alamat}
+      <div className="container mt-10 lg:mt-20 mx-auto">
+        <img
+          src={require("../../assets/banner.webp")}
+          alt="banner"
+          className="rounded-none lg:rounded-3xl"
+        />
+        <div className="absolute top-20 px-4 lg:py-52 lg:px-20">
+          <h2 className="text-white font-semibold text-base lg:text-5xl ">
+            Bikin ga kaku
+            <br />
+            di kantor baru
+          </h2>
+          <p className="text-white font-normal text-[10px] lg:text-2xl mt-4 lg:mt-5 ">
+            Rendy • Cerdikiawan
           </p>
-          <div className="flex items-center mt-3">
-            <div className="flex items-center mr-5">
-              <StarIcon className="text-[#FFDE00]" fontSize="sm" />
-              <h6 className="font-semibold ml-2 text-black text-sm">New</h6>
-            </div>
-            <div className="flex items-center mr-5">
-              <LocationOnIcon className="text-[#EA001F]" fontSize="sm" />
-              <h6 className="font-semibold ml-2 text-black text-sm">
-                {Detil.jarak}
-              </h6>
-            </div>
-            <div className="flex items-center mr-5">
-              <AttachMoneyIcon className="text-[#000000]" fontSize="sm" />
-              <h6 className="font-semibold ml-2 text-black text-sm">16k-40k</h6>
-            </div>
-          </div>
-          <div className="flex">
-            <div className="flex item-center mt-5 cursor-pointer">
-              <StoreIcon fontSize="medium" className="text-[#EA001F]" />
-              <h2 className="font-semibold ml-2 text-base">Lihat Toko</h2>
-            </div>
-            <div className="flex item-center mt-5 cursor-pointer ml-5">
-              <ShoppingBasketIcon
-                fontSize="medium"
-                className="text-[#EA001F]"
-              />
-              <h2 className="font-semibold ml-2 text-base">Pesan</h2>
-            </div>
-          </div>
+          <span className="text-[#f08323] font-medium lg:text-3xl italic text-sm">
+            #PastiAdaJalan
+          </span>
+        </div>
+        <div className="flex items-center mx-auto justify-between flex-col lg:flex-row">
+          <h2 className="text-black font-semibold lg:text-3xl text-xl px-4 lg:px-0 py-4 lg:py-5">
+            Temukan Menu Favoritemu Untuk DiPesanan
+          </h2>
+          <input
+            placeholder="Cari Menu Makanan"
+            className="w-[300px] lg:w-[400px] bg-[#ECECEC] lg:py-3 py-2 px-4 lg:px5 rounded-lg border-none"
+          />
         </div>
       </div>
 
-      {/* keranjang */}
-      <div className="px-8 lg:px-12">
-        <h2 className="text-black font-semibold text-2xl my-2">Review</h2>
-        {listMakanan.pelanggan.map((item) => {
+      <div className="flex flex-wrap items-center mt-4 w-full justify-center">
+        {listMakanan.listMakanan.map((item, index) => {
           return (
-            <div className="mb-6">
-              <div className="flex">
+            <Link to={`/detil/${item.id}`} key={index}>
+              <div className="px-2 cursor-pointer drop-shadow-sm hover:scale-105 ease-in-out duration-300 py-2 my-2 lg:my-4">
                 <img
-                  className="inline-block mb-2 object-cover rounded-full w-[50px] h-[50px]"
+                  className="w-[150px] lg:w-[250px] inline-block mb-3 object-cover rounded h-[100px] lg:h-[150px]"
                   src={item.img}
-                  alt="img-detil"
+                  alt="slider-img"
                 />
-                <div className="ml-3">
-                  <h2 className="text-base font-semibold text-black">
-                    {item.title}
-                  </h2>
-                  <p className="text-xs lg:text-sm font-normal">{item.user}</p>
+                <h2 className="text-sm lg:text-lg font-semibold text-black">
+                  {`${item.title.slice(0, 17)}...`}
+                </h2>
+                <p className="text-xs text-gray-600">{`${item.ctg.slice(
+                  0,
+                  17
+                )}...`}</p>
+                <div className="flex">
+                  <div className="flex items-center mt-2">
+                    <LocationOnIcon fontSize="sm" className="text-[#EA001F]" />
+                    <p className="text-black font-normal text-sm">
+                      {item.jarak}
+                    </p>
+                  </div>
                 </div>
               </div>
-              <p className="text-sm font-normal mb-4">{item.message}</p>
-            </div>
+            </Link>
           );
         })}
       </div>
+
       <footer class="p-4 bg-white sm:p-6 ">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
@@ -118,7 +80,7 @@ const DetilMenu = () => {
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 class="mb-6 text-sm font-semibold uppercase text-black">
+              <h2 class="mb-6 text-sm font-semibold  uppercase text-black">
                 Resources
               </h2>
               <ul class="text-black font-normal">
@@ -158,7 +120,7 @@ const DetilMenu = () => {
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold uppercase text-black">
+              <h2 class="mb-6 text-sm font-semibold  uppercase text-black">
                 Legal
               </h2>
               <ul class="text-black">
@@ -279,4 +241,4 @@ const DetilMenu = () => {
   );
 };
 
-export default DetilMenu;
+export default Menus;
